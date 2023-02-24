@@ -1,0 +1,23 @@
+{
+  "name": "professional_readme_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vighimre87/Professional_README_Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vighimre87/Professional_README_Generator/issues"
+  },
+  "homepage": "https://github.com/vighimre87/Professional_README_Generator#readme",
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  }
+}
