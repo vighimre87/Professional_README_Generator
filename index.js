@@ -14,7 +14,9 @@ const questions = [
     "How can I contribute?",
     "How can I test the application?",
     "Who did/does participate in this project?",
-    "Select which license would you like:"
+    "Select which license would you like:",
+    "What is your GitHub username?",
+    "What is your email address?"
 ];
 
 
@@ -73,7 +75,17 @@ function init() {
       message: questions[7],
       name: "license",
       choices: ["MIT", "Apache License 2.0", "GNU GPLv2", "GNU GPLv3", "ISC Licenses"]
-    }
+    },
+    {
+      type: "input",
+      message: questions[8],
+      name: "gitHubAccount",
+  },
+  {
+    type: "input",
+    message: questions[9],
+    name: "emailAddress",
+},
     ]).then((response)=> {
       console.log(response);
       const readmeTemplate = generateMarkdown.generateMarkdown(response);

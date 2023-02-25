@@ -1,5 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
+  let badgeURL 
   return `# ${data.title}
 
   ## Description
@@ -8,10 +9,11 @@ function generateMarkdown(data) {
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Contribution](#contribution)
-  - [Testing](#testing)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
   - [Credits](#credits)
   - [License](#license)
+  - [Questions](#questions)
 
   ## Installation
   ${data.installation}
@@ -19,10 +21,10 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  ## Contribution
+  ## Contributing
   ${data.contribution}
 
-  ## Testing
+  ## Tests
   ${data.testing}
 
   ## Credits
@@ -30,6 +32,9 @@ function generateMarkdown(data) {
 
   ## License
   ${data.license}
+
+  ## Questions
+  If you have got any question feel free to check my GitHub account out on https://github.com/${data.gitHubAccount} or send me an email to the <mailto:${data.emailAddress}> email address.
 `;
 }
 
