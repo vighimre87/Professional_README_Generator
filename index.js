@@ -8,18 +8,20 @@ import generateMarkdown from "./utils/generateMarkdown.js";
 // array of questions for user
 const questions = [
     "What is the title of the project?",
-    "Tell me a little bit more about the project:",
-    "What do you need to do to install?",
+    "Tell me a little bit more about this project:",
+    "How do I install this project?",
     "How can I use the application?",
     "How can I contribute?",
-    "How to test the application?"
+    "How can I test the application?",
+    "Who did/does participate in this project?",
+    "Select which license would you like:"
 ];
 
 
 
 // function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile(`${fileName}.md`, data, (err) => {
+  fs.writeFile(fileName, data, (err) => {
     err ? console.error(err) : console.log("Success");
   })
 }
@@ -30,7 +32,7 @@ function init() {
       {
         type: "input",
         message: questions[0],
-        name: "title"
+        name: "title",
     },
     {
         type: "input",
@@ -40,27 +42,42 @@ function init() {
     {
         type: "input",
         message: questions[2],
-        name: "installation"
+        name: "installation",
+        default: "N/A"
     },
     {
         type: "input",
         message: questions[3],
-        name: "usage"
+        name: "usage",
     },
     {
         type: "input",
         message: questions[4],
-        name: "contribution"
+        name: "contribution",
+        default: "N/A"
     },
     {
       type: "input",
       message: questions[5],
-      name: "testing"
+      name: "testing",
+      default: "N/A"
+    },
+    {
+      type: "input",
+      message: questions[6],
+      name: "credits",
+      default: "N/A"
+    },
+    {
+      type: "list",
+      message: questions[7],
+      name: "license",
+      choices: ["MIT", "Apache License 2.0", "GNU GPLv3", "ISC Licenses"]
     }
     ]).then((response)=> {
       console.log(response);
       const readmeTemplate = generateMarkdown.generateMarkdown(response);
-      writeToFile(response.title, readmeTemplate);
+      writeToFile("README.md", readmeTemplate);
     })
 }
 
