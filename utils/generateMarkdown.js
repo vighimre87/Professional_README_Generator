@@ -1,4 +1,5 @@
 // function to generate markdown for README
+// The links for the badges are coming from the following source: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
 function generateMarkdown(data) {
   let badgeLink = "";
   switch(data.license) {
