@@ -28,6 +28,8 @@
 
   You can watch a video demonstration of the application on the following link: https://drive.google.com/file/d/1jD_0JfG3poO4WKzZhTTz0yxSuMPwQphu/view.
 
+  You can also see a sample README file in the repo that has been created with the application. Please refer to the sampleREADME.md file.
+
   ## Contributing
   Any contribution is greatly appreciated.
   If you have any suggestion that would make this project better, please fork the repo and create a pull request. You can also just open an issue with the "enhancement". And also don't forget to give a star to the project!
