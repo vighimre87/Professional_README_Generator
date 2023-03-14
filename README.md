@@ -28,7 +28,9 @@
 
   You can watch a video demonstration of the application on the following link: https://drive.google.com/file/d/1jD_0JfG3poO4WKzZhTTz0yxSuMPwQphu/view.
 
-  You can also see a sample README file in the repo that has been created with the application. Please refer to the sampleREADME.md file.
+  You can also see a sample README file in the repo that has been created with the application. Please refer to the sampleREADME.md file. Please see a mockup image of the sample README file below:
+
+  <img src="assets/Professional-README-Generator.png" alt="Mockup of the README generator" style="width:500px;"/>
 
   ## Contributing
   Any contribution is greatly appreciated.
